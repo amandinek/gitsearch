@@ -1,1 +1,24 @@
-<p>profile works!</p>
+<div>
+    <label>
+        <input type="text" placeholder="search">
+    </label>
+    <button type="submit"><img src="https://img.icons8.com/material/24/000000/search--v1.png"></button>
+</div>
+
+<div *ngIf="profile">
+    <p *ngIf="profile.name">{{profile.name}}</p>
+    <p>{{profile.login}}</p>
+    <img src="{{profile.avatar_url}}">
+    <ul>
+        <li *ngIf="profile.bio">{{profile.bio}}</li>
+        <li *ngIf="profile.public_repos">number of repositories{{profile.public_repos}}</li>
+        <li *ngIf="profile.followers">followers {{profile.followers}}</li>
+        <li *ngIf="profile.following">following {{profile.following}}</li>
+        <li *ngIf="profile.hireable">available for hire {{profile.hireable}}</li>
+        <button><a href="{{profile.html_url}}" target="_blank">git prof</a></button>
+    </ul>
+    <h1>repositories</h1>
+    <div *ngFor ="let reposit of reposits" >
+        <p><a href="{{reposit.html_url}}" target="_blanck">{{reposit.name}} </a></p>
+    </div>
+</div>
