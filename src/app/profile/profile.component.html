@@ -1,22 +1,21 @@
 <div class="container">
-    <form action="">
-        <label>
-            <input type="text" placeholder="search"[(ngModel)]="username" name="username" (keyup.enter)="profileUser()">
-        </label>
-        <!-- <button type="submit"><img src="https://img.icons8.com/material/24/000000/search--v1.png"></button> -->
-    </form>
-
-
+    <br>
+    <br>
+    <h2 align="center">Github profile</h2>
+    <div class="forms">
+        <form class="form">
+            <label>
+                <input id="fr" type="text" placeholder="search"[(ngModel)]="username" name="username" (keyup.enter)="profileUser()">
+            </label>
+            
+        </form>
+    </div>
+    <br>
     <div class="card" *ngIf="profile">
         <div class="class-header">
-        <div class="row">
-            <div class="col-md-2">
-                    <h2 *ngIf="profile.name">{{profile.name}}</h2>
-            </div>
-            <div class="col-md-2">
-                    <p>{{profile.login}}</p>
-            </div>          
-        </div>  
+                  
+            <h2 *ngIf="profile.name">{{profile.name}}</h2>                               
+        
         </div>
         <div class="card-body">
             <div class="row">
@@ -25,15 +24,16 @@
                 </div>
                 <div class="col-md-8">
                     <div class="desc">
-                        <span class="badge badge-info">{{profile.public_repos}}</span>
-                        <span class="badge badge-info">{{profile.followers}}</span>
-                        <span class="badge badge-info">{{profile.following}}</span>
+                        <span class="badge badge-info">{{profile.public_repos}} Public repos</span>
+                        <span class="badge badge-info">{{profile.followers}} Followers</span>
+                        <span class="badge badge-info">{{profile.following}} following</span>
                     </div>
-                    <ul>
-                        <li *ngIf="profile.bio">{{profile.bio}}</li>                    
-                        <li *ngIf="profile.hireable"><strong>for hire:</strong>  {{profile.hireable}}</li>
-                        <li><button><a href="{{profile.html_url}}" target="_blank">git prof</a></button></li>
-                        <li><strong>Member since:</strong>{{profile.created_at| date:short:timezone}}</li>
+                    <ul class="list-group">
+                        <li class="list-group-item"  *ngIf="profile.login"><strong>user name:</strong>{{profile.login}}</li> 
+                        <li class="list-group-item"  *ngIf="profile.bio">{{profile.bio}}</li>                    
+                        <li class="list-group-item"  *ngIf="profile.hireable"><strong>for hire:</strong>  {{profile.hireable}}</li>
+                        <li class="list-group-item" ><button class="btn-outline-info"><a href="{{profile.html_url}}" target="_blank">git profile</a></button></li>
+                        <li class="list-group-item" ><strong>Member since:</strong>{{profile.created_at| date:short:timezone}}</li>
                     </ul>
 
                 </div>

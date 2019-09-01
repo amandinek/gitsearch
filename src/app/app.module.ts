@@ -9,7 +9,6 @@ import { ProfileComponent } from './profile/profile.component';
 import { RepositoryComponent } from './repository/repository.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
-// import { RepositoryComponent } from './repository/repository.component';
 
 
 @NgModule({
@@ -17,9 +16,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     AppComponent,
     ProfileComponent,
     RepositoryComponent,
-    NavbarComponent,
-   
-    // RepositoryComponent
+    NavbarComponent,    
   ],
   imports: [
     BrowserModule,
