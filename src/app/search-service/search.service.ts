@@ -1,7 +1,5 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Repo } from '../repo';
-import { Git } from '../git-class/git';
 import { environment } from 'src/environments/environment';
 
 @Injectable({
