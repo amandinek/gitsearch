@@ -1,0 +1,25 @@
+body{
+    background-image: url("https://images.wallpaperscraft.com/image/silhouette_lake_night_146136_1280x960.jpg");
+    background-size:cover;
+    
+}
+.card-header{
+    background-color:#B0C4DE;
+    text-align: center;
+}
+.forms{
+    margin:auto;
+    width:60%;
+    padding: 10px;
+    padding-left: 70px;
+
+}
+#fr{
+    padding-right: 350px;
+}
+.row{
+    border-bottom: 1px solid grey;
+    border-radius: 4px;
+    padding: 7px;
+    margin: 3px
+}

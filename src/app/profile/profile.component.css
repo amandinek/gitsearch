@@ -1,3 +1,11 @@
+body{
+    background-image: url("https://images.wallpaperscraft.com/image/silhouette_lake_night_146136_1280x960.jpg");
+    background-size: cover;
+}
+.card-header{
+    background-color:#B0C4DE;
+    text-align: center;
+}
 .badge{
     padding: 15px;
     margin: 10px;
