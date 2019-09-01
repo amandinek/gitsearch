@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-// import { HttpClient } from '@angular/common/http';
+
 
 import { SearchService } from '../search-service/search.service';
-// import { Repo } from '../repo';
-// import { Git } from '../git-class/git';
+
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
