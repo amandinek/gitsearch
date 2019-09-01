@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
 import { RepositoryComponent } from './repository/repository.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { HighlightDirective } from './highlight.directive';
 
 
 
@@ -16,7 +17,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     AppComponent,
     ProfileComponent,
     RepositoryComponent,
-    NavbarComponent,    
+    NavbarComponent,
+    HighlightDirective,    
   ],
   imports: [
     BrowserModule,
