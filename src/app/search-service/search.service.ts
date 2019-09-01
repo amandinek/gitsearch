@@ -9,9 +9,7 @@ import { environment } from 'src/environments/environment';
 })
 export class SearchService {
   private username:string;
-  // private clientId="5002525f535295821679";
-  // private clientSecret="c36ee9c48419d167bc0fa0adee0f0beb25d03f4b";
-
+ 
   constructor(private http:HttpClient) { 
     this.username="amandinek"
   }
