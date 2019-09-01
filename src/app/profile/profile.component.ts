@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
-
 import { SearchService } from '../search-service/search.service';
 
 @Component({
@@ -12,7 +10,6 @@ export class ProfileComponent implements OnInit {
   profile:any;
   reposits:any;
   username: string;
-
 
 constructor(private search:SearchService) {
   this.search.getPersonalInfo().subscribe(data=>{
