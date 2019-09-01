@@ -5,20 +5,41 @@
         </label>
         <!-- <button type="submit"><img src="https://img.icons8.com/material/24/000000/search--v1.png"></button> -->
     </form>
-</div>
 
-<div *ngIf="profile">
-    <p *ngIf="profile.name">{{profile.name}}</p>
-    <p>{{profile.login}}</p>
-    <img src="{{profile.avatar_url}}">
-    <ul>
-        <li *ngIf="profile.bio">{{profile.bio}}</li>
-        <li *ngIf="profile.public_repos">number of repositories{{profile.public_repos}}</li>
-        <li *ngIf="profile.followers">followers {{profile.followers}}</li>
-        <li *ngIf="profile.following">following {{profile.following}}</li>
-        <li *ngIf="profile.hireable">available for hire {{profile.hireable}}</li>
-        <button><a href="{{profile.html_url}}" target="_blank">git prof</a></button>
-    </ul>
+
+    <div class="card" *ngIf="profile">
+        <div class="class-header">
+        <div class="row">
+            <div class="col-md-2">
+                    <h2 *ngIf="profile.name">{{profile.name}}</h2>
+            </div>
+            <div class="col-md-2">
+                    <p>{{profile.login}}</p>
+            </div>          
+        </div>  
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="{{profile.avatar_url}}">
+                </div>
+                <div class="col-md-8">
+                    <div class="desc">
+                        <span class="badge badge-info">{{profile.public_repos}}</span>
+                        <span class="badge badge-info">{{profile.followers}}</span>
+                        <span class="badge badge-info">{{profile.following}}</span>
+                    </div>
+                    <ul>
+                        <li *ngIf="profile.bio">{{profile.bio}}</li>                    
+                        <li *ngIf="profile.hireable"><strong>for hire:</strong>  {{profile.hireable}}</li>
+                        <li><button><a href="{{profile.html_url}}" target="_blank">git prof</a></button></li>
+                        <li><strong>Member since:</strong>{{profile.created_at| date:short:timezone}}</li>
+                    </ul>
+
+                </div>
+            </div>
+    </div>    
+</div>
 </div>
     
 
