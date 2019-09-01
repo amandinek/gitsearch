@@ -1,1 +1,39 @@
-<p>repository works!</p>
+<div class="container">
+    <br>
+    <br>
+    <form class="form">
+        <label>
+            <input class="form-control" type="text" placeholder="search"[(ngModel)]="username" name="username" (keyup.enter)="profileUser()">
+        </label>
+       
+    </form>
+
+<h1>repositories</h1>
+<div  class="card"    *ngIf="profile">
+    <div class="card-header">
+        <h4 align="center" *ngIf="profile.name">{{profile.name}} </h4>
+        <small align="center" >{{profile.login}}</small>
+    </div>
+    <div class="card-body">
+        <div class="row" *ngFor ="let reposit of reposits , let i=index">
+            <div class="col-md-4">
+               <p>{{reposits[i].name}}</p> 
+            </div>
+            <div class="col-md-4">
+                <a href="{{reposits[i].html_url}}" target="_blanck"><button class="btn-inline btn-outline-info">view repo</button></a>
+            </div>
+            <div class="col-md-4">
+                <p>{{reposits[i].pushed_at| date:short:timezone}}</p>
+            </div>
+
+        </div>
+    </div>
+    
+    
+</div>    
+<!-- <div *ngFor ="let reposit of reposits , let i=index">
+    <p><a href="{{reposits[i].html_url}}" target="_blanck">{{reposits[i].name}} </a></p>
+</div> -->
+</div>
+
+<!-- {{repos[i].pushed_at| date:short:timezone}} -->

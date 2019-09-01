@@ -16,7 +16,14 @@ export class ProfileComponent implements OnInit {
 
 
 constructor(private search:SearchService) {
-  
+  this.search.getPersonalInfo().subscribe(data=>{
+    console.log(data)
+    this.profile=data;
+  });
+  this.search.getProfileRepos().subscribe(repo=>{
+    console.log(repo);
+    this.reposits=repo;
+  })
  }
  profileUser(){
    this.search.upDateUser(this.username);

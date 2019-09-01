@@ -1,4 +1,4 @@
-<div>
+<div class="container">
     <form action="">
         <label>
             <input type="text" placeholder="search"[(ngModel)]="username" name="username" (keyup.enter)="profileUser()">
@@ -19,9 +19,6 @@
         <li *ngIf="profile.hireable">available for hire {{profile.hireable}}</li>
         <button><a href="{{profile.html_url}}" target="_blank">git prof</a></button>
     </ul>
-    <h1>repositories</h1>
-    <div *ngFor ="let reposit of reposits" >
-        <p><a href="{{reposit.html_url}}" target="_blanck">{{reposit.name}} </a></p>
-    </div>
 </div>
-<!-- <app-repository></app-repository> -->
+    
+
