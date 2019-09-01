@@ -4,8 +4,6 @@ import { Directive,ElementRef,HostListener } from '@angular/core';
   selector: '[appHighlight]'
 })
 export class HighlightDirective {
-  // highlight: any;
-
   constructor(private elem:ElementRef) { }
   @HostListener("mousenter") onMouseEnter(){
     this.highlight("highlight");
