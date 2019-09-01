@@ -1,7 +1,7 @@
 <div>
     <form action="">
         <label>
-            <input type="text" placeholder="search"[(ngModel)]="username" name="username" (keyup)="profileUser()">
+            <input type="text" placeholder="search"[(ngModel)]="username" name="username" (keyup.enter)="profileUser()">
         </label>
         <!-- <button type="submit"><img src="https://img.icons8.com/material/24/000000/search--v1.png"></button> -->
     </form>
@@ -24,3 +24,4 @@
         <p><a href="{{reposit.html_url}}" target="_blanck">{{reposit.name}} </a></p>
     </div>
 </div>
+<!-- <app-repository></app-repository> -->
