@@ -2,26 +2,31 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
 
-## Development server
+## Author's name 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Karambizi Amandine Gloria
 
-## Code scaffolding
+## Project name 
+gitsearch
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Description 
 
-## Build
+This is an app for searching agithub account and get some information about it
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## Specifications
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+This app search accounts using github API
+Allows you to see info about the github user 
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Link to deployed page
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Used technologies
+
+HTML, CSS, Angular CLI,and Bootstrap
+
+## Lisence
+
+Copyright (c) 2019 Karambizi Amandine Gloria
