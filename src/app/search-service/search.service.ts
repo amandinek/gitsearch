@@ -13,10 +13,10 @@ export class SearchService {
     this.username="amandinek"
   }
   getPersonalInfo(){
-    return this.http.get("https://api.github.com/users/"+ this.username + "?client_id="+ environment.Id + "&client_secret="+environment.Key)
+    return this.http.get("https://api.github.com/users/"+ this.username + "?client_id="+ environment.clientId + "&client_secret="+environment.ClientKey)
   }
   getProfileRepos(){
-    return this.http.get("https://api.github.com/users/"+ this.username + "/repos?client_id="+ environment.Id + "&client_secret="+environment.Key)
+    return this.http.get("https://api.github.com/users/"+ this.username + "/repos?client_id="+ environment.clientId + "&client_secret="+environment.ClientKey)
   }
   upDateUser(username:string){
     this.username=username;

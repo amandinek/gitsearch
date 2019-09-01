@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  Id:"5002525f535295821679",
-  Key:"c36ee9c48419d167bc0fa0adee0f0beb25d03f4b",
+  clientId:"5002525f535295821679",
+  ClientKey:"c36ee9c48419d167bc0fa0adee0f0beb25d03f4b",
 };
 
 /*
