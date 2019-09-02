@@ -21,7 +21,7 @@ Allows you to see info about the github user
 
 
 ## Link to deployed page
-
+Deployed link:https://amandinek.github.io/gitsearch
 
 ## Used technologies
 
