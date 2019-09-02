@@ -34,7 +34,7 @@
                             <li class="list-group-item"  *ngIf="profile.bio">{{profile.bio}}</li>                    
                             <li class="list-group-item"  *ngIf="profile.hireable"><strong>for hire:</strong>  {{profile.hireable}}</li>
                             <li class="list-group-item" ><button class="btn-outline-info"><a href="{{profile.html_url}}" target="_blank">git profile</a></button></li>
-                            <li class="list-group-item" ><strong>Member since:</strong>{{profile.created_at| date:short:timezone}}</li>
+                            <li class="list-group-item" ><strong>Member since:</strong>{{profile.created_at| date}}</li>
                         </ul>
                     </div>
                 </div>
